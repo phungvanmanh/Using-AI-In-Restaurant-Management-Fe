@@ -7,6 +7,8 @@ import DanhMuc from "@/pages/Admin/DanhMuc";
 import KhuVuc from "@/pages/Admin/KhuVuc";
 import MonAn from '@/pages/Admin/MonAn';
 import Ban from "@/pages/Admin/Ban"
+import KhachHang from "@/pages/Admin/KhachHang";
+import NhaCungCap from "@/pages/Admin/NhaCungCap";
 const routes = [
     {
         path: "/",
@@ -39,6 +41,14 @@ const routes = [
             {
                 path: "ban",
                 component: Ban,
+            },
+            {
+                path: "khach-hang",
+                component: KhachHang,
+            },
+            {
+                path: "nha-cung-cap",
+                component: NhaCungCap,
             },
         ],
     },

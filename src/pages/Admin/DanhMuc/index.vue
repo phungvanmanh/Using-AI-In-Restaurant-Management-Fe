@@ -40,8 +40,8 @@
                             </tr>
                         </template>
                         <template #tbody>
-                            <template v-for="(value, key) in dataDanhMuc" :key="key">
-                                <tr>
+                         
+                                <tr v-for="(value, key) in dataDanhMuc" :key="key">
                                     <th class="text-center align-middle text-nowrap">
                                         {{ key + 1 }}
                                     </th>
@@ -110,7 +110,7 @@
                                         </ModalComponent>
                                     </td>
                                 </tr>
-                            </template>
+                        
                         </template>
                     </TableComponent>
                 </template>

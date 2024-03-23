@@ -37,8 +37,8 @@
                             </tr>
                         </template>
                         <template #tbody>
-                            <template v-for="(value, index) in dataDanhMuc" :key="index">
-                                <tr>
+                          
+                                <tr  v-for="(value, index) in dataDanhMuc" :key="index">
                                     <th class="text-center align-middle text-nowrap">{{ index + 1 }}</th>
                                     <td class="align-middle text-nowrap">{{ value.ten_chuyen_muc }}</td>
                                     <td class="align-middle text-nowrap">{{ value.id_chuyen_muc_cha ? value.ten_root : "Root" }}</td>
@@ -76,7 +76,6 @@
                                     </td>
                                 </tr>
                             </template>
-                        </template>
                     </TableComponent>
                 </template>
             </CardComponent>
